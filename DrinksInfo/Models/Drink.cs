@@ -3,19 +3,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace DrinksInfo.Models
 {
-    public class Category
+    public class Drink
     {
-        public string strCategory { get; set; }
+        public string idDrink { get; set; }
+        public string strDrink { get; set; }
     }
 
-    public class Categories
+    public class Drinks
     {
         [JsonProperty("drinks")]
-        public List<Category> CategoriesList { get; set; }
+        public List<Drink> DrinksList { get; set; }
     }
 }
